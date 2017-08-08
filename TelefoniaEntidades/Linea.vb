@@ -8,12 +8,9 @@
         _estado = ""
     End Sub
     Sub New(codigoArea As UShort, numero As UInteger)
-        If codigoArea > 99 And codigoArea < 10000 Then
-            Me._codigoArea = codigoArea
-        End If
-        If numero > 99999 And numero < 10000000 Then
-            Me._numero = numero
-        End If
+        Me.New()
+        Me.CodigoArea = codigoArea
+        Me.Numero = numero
     End Sub
     Public Property CodigoArea As UShort
         Get

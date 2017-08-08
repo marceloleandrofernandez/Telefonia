@@ -8,13 +8,10 @@
         _documento = 0
     End Sub
     Sub New(apellido As String, nombre As String, documento As UInteger)
-        If Len(apellido) < 31 And apellido <> "" Then
-            Me._apellido = apellido
-        End If
-        If Len(nombre) < 51 And nombre <> "" Then
-            Me._nombre = nombre
-        End If
-        Me._documento = documento
+        Me.New()
+        Me.Apellido = apellido
+        Me.Nombre = nombre
+        Me.Documento = documento
     End Sub
     Public Property Apellido As String
         Get

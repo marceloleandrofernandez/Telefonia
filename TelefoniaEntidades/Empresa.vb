@@ -6,12 +6,9 @@
         _cuit = ""
     End Sub
     Sub New(razonSocial As String, cuit As String)
-        If Len(razonSocial) < 81 And razonSocial <> "" Then
-            Me._razonSocial = razonSocial
-        End If
-        If Len(cuit) < 14 And razonSocial <> "" Then
-            Me._cuit = cuit
-        End If
+        Me.New()
+        Me.RazonSocial = razonSocial
+        Me.Cuit = cuit
     End Sub
     Public Property RazonSocial As String
         Get

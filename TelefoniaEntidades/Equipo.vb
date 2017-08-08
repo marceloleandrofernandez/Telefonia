@@ -10,15 +10,10 @@
         _fechaVenta = Nothing
     End Sub
     Sub New(marca As String, modelo As String, serie As String)
-        If Len(marca) < 31 And marca <> "" Then
-            Me._marca = marca
-        End If
-        If Len(modelo) < 51 And modelo <> "" Then
-            Me._modelo = modelo
-        End If
-        If Len(serie) < 16 And serie <> "" Then
-            Me._serie = serie
-        End If
+        Me.New()
+        Me.Marca = marca
+        Me.Modelo = modelo
+        Me.Serie = serie
     End Sub
     Public Property Marca As String
         Get
