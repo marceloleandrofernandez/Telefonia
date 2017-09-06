@@ -41,7 +41,7 @@
     End Property
     Public MustOverride Function disponible() As String
 
-    Public Overridable Sub addConsumo(valor As UInteger)
+    Public Sub addConsumo(valor As UInteger)
         If valor + _consumo <= Credito Then
             _consumo += valor
         End If

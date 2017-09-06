@@ -1,18 +1,15 @@
 ﻿Public NotInheritable Class Minuto
     Inherits Plan
     Sub New()
-        MyBase.New()
+        Me.New(0, "", 0.0)
     End Sub
     Sub New(credito As UInteger, nombre As String, precio As Single)
-        MyBase.New()
-        MyBase.Credito = credito
-        MyBase.Nombre = nombre
-        MyBase.Precio = precio
+       MyBase.New(credito, nombre, precio)
     End Sub
     Public Overrides Function ToString() As String
         Return MyBase.Nombre
     End Function
     Public Overrides Function disponible() As String
-        Return Credito - _consumo & " " & Nombre
+        Return Credito - _consumo & " " & ToString()
     End Function
 End Class

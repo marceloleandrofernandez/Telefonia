@@ -1,7 +1,7 @@
 ﻿Imports TelefoniaEntidades
 Module MensajeTest
-    Sub New()
-        Dim men As New Minuto(100, "Mensaje", 150)
+    Sub main()
+        Dim men As New Mensaje(100, "Mensaje", 150)
 
         Console.WriteLine("[*] Test de Mensaje [*]")
         men.Credito = 120
@@ -19,7 +19,8 @@ Module MensajeTest
         Console.WriteLine("Disponible: {0}", men.disponible)
         men.addConsumo(20)
         Console.WriteLine("Disponible: {0}", men.disponible)
-
+        Dim men2 As Plan
+        men2 = New Mensaje(100, "Mensaje", 300)
 
 
 

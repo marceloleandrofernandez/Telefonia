@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{05036454-8AB0-499B-B6E1-9DEC7D9229EE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>TelefoniaTest.MinutoTest</StartupObject>
+    <StartupObject>TelefoniaTest.MegaByteTest</StartupObject>
     <RootNamespace>TelefoniaTest</RootNamespace>
     <AssemblyName>TelefoniaTest</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -89,6 +89,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="PersonaTest.vb" />
+    <Compile Include="Plan.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
